@@ -1,0 +1,31 @@
+---
+project_name: test
+project_root: /srv/www/test
+project_repo: git@bitbucket.org:RafaelOrtiz/cloud.git
+system_packages:
+  - build-essential
+  - git
+  - libevent-dev
+  - nginx
+  - postgresql
+  - postgresql-server-dev-all
+  - python-dev
+  - python-setuptools
+  - redis-server
+  - postfix
+  - httpd-tools
+  - libevent-dev
+  - libpng12-dev
+  - libxml2-dev
+  - libxslt-dev
+  - readline-dev
+  - postgresql-libs
+  - httpd-tools
+
+python_packages:
+  - pip
+  - virtualenv
+  - virtualenvwrapper
+
+initfiles:
+  - gunicorn
