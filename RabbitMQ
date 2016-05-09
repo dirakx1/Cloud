@@ -1,0 +1,89 @@
+RabbitMQ
+
+    Copy repositories to /etc/yum.repos.d/
+    Install erlang
+    Download rabbitmq-server-3.3.5-1.noarch.rpm from RabbitMQ site
+    Execute yum command in file rabbitmq-server-3.3.5-1.noarch.rpm
+
+Management Console
+
+    http://localhost:15672
+    user: nameofuser passwd: passwd
+
+
+After installation you must begin the server with init.d/rabbit..server start
+
+## Restart rabbit
+
+* sudo rabbitmqctl stop_app
+* sudo rabbitmqctlforce_reset
+* sudo rabbitmqctl start_app
+* sudo rabbitmqctl list_queues
+
+## Create an adminsitrator user
+
+* sudo rabbitmqctl add_user nameofuser passwd
+* sudo rabbitmqctl set_user_tags nameofuser  administrator
+
+## Create a vhost
+* sudo rabbitmqctl add_vhost /
+* sudo rabbitmqctl list_vhosts
+
+## Enable plugins
+
+* sudo rabbitmq-plugins enable --offline  webmachine
+
+## Management console
+* rabbitmq-plugins enable rabbitmq_management
+* localhost:15672
+* localhost:15672/cli
+
+## Adding user to a vhost
+* A new created user should be added as access to a vhost this can be done via the admin
+of the management console.
+* or  sudo rabbitmqctl set_permissions -p myvhost myuser  ".*" ".*" ".*"
+
+## Finding the number of workers currently consuming from a queue:
+
+$ rabbitmqctl list_queues name consumers
+
+## Finding the amount of memory allocated to a queue:
+
+$ rabbitmqctl list_queues name memory
+
+## Having 2 celery in the same machine
+
+When having 2 celery in the same machine, make two different vhost
+
+## Reboot the machine
+
+When reboot the machine will change the hostname, re-set it and then kill all the rabbit process, then re-init rabbit.
+
+## Purge queues
+
+* Via admin
+
+## config
+The ip is the internal ip (to allow external connections)
+
+[
+  {rabbit, [
+    {tcp_listeners, [{"127.0.0.1", 5672},
+                     {"::1",       5672},
+                     {"10.249.30.196",   5672}
+]}
+  ]}
+].
+
+
+## TODOS
+if a node fails, take a look at how to restart it, also you can restart the rabbit server with
+* sudo /etc/init.d/rabbitmq-server start  but only when you NEED to do it, otherwise is better to use stop_app and start_aop
+* clusterization/celery intereactions
+
+
+## References
+* [[Rabbit]]
+* http://www.rabbitmq.com/man/rabbitmqctl.1.man.html
+* http://www.rabbitmq.com/management.html
+* http://stackoverflow.com/questions/8737754/node-with-name-rabbit-already-running-but-also-unable-to-connect-to-node
