@@ -17,3 +17,17 @@ SET age = 22
 WHERE id = 1; 
 
 SELECT * FROM celebs;
+
+# Add a new column
+
+ALTER TABLE celebs ADD COLUMN twitter_handle TEXT; 
+
+SELECT * FROM celebs;
+
+# update register
+
+UPDATE celebs 
+SET twitter_handle = '@taylorswift13' 
+WHERE id = 4; 
+
+SELECT * FROM celebs;
