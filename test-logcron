@@ -1,0 +1,5 @@
+# simple cron to compress logs
+
+tar -cvf /home/apache-log.tar.gz  /var/log/apache2 
+tar -cvf /home/mysql-log,tar.gz /var/log/mysql.log
+tar -cvf /home/mysql-err.tar.gz /var/log/mysql.err
