@@ -8,7 +8,7 @@ define host{
         use                     generic-host            ; Name of host template to use
         host_name               localhost
         alias                   localhost
-        address                 127.0.0.1
+        address                 172.17.0.1    # ip of docker container
         }
 
 # Define a service to check the disk space of the root partition
