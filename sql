@@ -94,3 +94,4 @@ SELECT category, SUM(downloads) FROM fake_apps
 GROUP BY category;
 
 SELECT MAX(downloads) FROM fake_apps;
+SELECT AVG(downloads) FROM fake_apps;
