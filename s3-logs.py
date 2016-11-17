@@ -13,8 +13,8 @@ from boto.s3.connection import S3Connection
 from boto.s3.key import Key
 
 
-AWS_ACCESS_KEY_ID = 'AKIAJJ7IVT2GOHJ43NQQ' # your key id
-AWS_SECRET_ACCESS_KEY = '3rPZBaFXsD7KR2g0rr5G6Da5md8op89p+RePTJxp' # your access id
+AWS_ACCESS_KEY_ID = '********' # your key id
+AWS_SECRET_ACCESS_KEY = '*********' # your access id
 BUCKET_NAME = 'docker-logs'
 CHUNK_SIZE = 52428800  # 50 MiB
 
