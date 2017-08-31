@@ -1,4 +1,4 @@
-# to be putted on a crontab
+# to be put on a crontab
 
 pg_dumpall |gzip > /home/user/backups/database/allbackup.gzip
 pg_dump goal |gzip > /home/user/backups/database/db.gz
