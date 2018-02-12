@@ -13,7 +13,7 @@
 
 * s3cmd -c s3cfg_NUS mv --recursive s3://upload_history/2014 s3://upload_history1
 
-# Looking for the space on disk on a bucket
+# Looking for the space on disk of a bucket
 
 * s3cmd -c conf_file du --human  s3://bucket
 
