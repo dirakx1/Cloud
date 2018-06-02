@@ -25,7 +25,7 @@ Create a bucket
 
 .. code-block::
 
-Please note that the bucket name needs to be globally unique. So if you create a bucket called "test", some other user may have created a bucket with the same name already and bucket creation will fail. One of the reasons for the uniqueness requirements is that resources in S3 can be shared using HTTP urls and the bucket name acts as a key inside the URL to give a namespace for resources. This way, two buckets can contain a resource called, e.g. "index.html". Bucket names should be written with lowercase letters and they should be usable as a DNS name (like "mybucket.s3demo.nsn-net.net").
+
  [root@euca-xx-xxx-xx-xxx ~]# s3cmd mb s3://test-bucket
  Bucket 's3://test-bucket/' created
 
