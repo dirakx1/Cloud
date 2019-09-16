@@ -1,5 +1,9 @@
 # RabbitMQ
 
+RabbitMQ is a message-queueing software called a message broker or queue manager. Simply said; It is a software where queues can be defined, applications may connect to the queue and transfer a message onto it. 
+
+Data can be from servers, applications and servers 
+
     Copy repositories to /etc/yum.repos.d/
     Install erlang
     Download rabbitmq-server-3.3.5-1.noarch.rpm from RabbitMQ site
