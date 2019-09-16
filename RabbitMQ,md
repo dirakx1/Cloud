@@ -1,11 +1,11 @@
-RabbitMQ
+# RabbitMQ
 
     Copy repositories to /etc/yum.repos.d/
     Install erlang
     Download rabbitmq-server-3.3.5-1.noarch.rpm from RabbitMQ site
     Execute yum command in file rabbitmq-server-3.3.5-1.noarch.rpm
 
-Management Console
+## Management Console
 
     http://localhost:15672
     user: nameofuser passwd: passwd
@@ -83,6 +83,7 @@ if a node fails, take a look at how to restart it, also you can restart the rabb
 
 
 ## References
+
 * [[Rabbit]]
 * http://www.rabbitmq.com/man/rabbitmqctl.1.man.html
 * http://www.rabbitmq.com/management.html
