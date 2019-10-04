@@ -5,7 +5,7 @@ These are a a series of scripts, code, benchmarking, goodies and configurations 
 
 ## Items
 
-* Ansible (puppet, aws, GCP, chef..in future)
+* Ansible (puppet, aws, GCP, chef..in future)(Please see devops tools)
 * EBS
 * S3 (Boto)
 * benchmarking
