@@ -2,6 +2,7 @@
 
 
 These are a a series of scripts, code, benchmarking, goodies and configurations used in an eucalyptus private cloud.
+You can see more documentation on [gcp] and [aws]
 
 ## Items
 
