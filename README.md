@@ -8,7 +8,7 @@ You can see more documentation on [GCP](https://github.com/dirakx1/GCP) and [AWS
 
 ## Items
 
-* Ansible (puppet, aws, GCP, chef..in future)(Please see [devops] tools for specific info)
+* Ansible (puppet, aws, GCP, chef..in future)(Please see [Devops](https://github.com/dirakx1/Devops) tools for specific info)
 * EBS
 * S3 (Boto)
 * benchmarking
