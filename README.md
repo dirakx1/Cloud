@@ -8,9 +8,10 @@ You can see more documentation on [gcp] and [aws]
 
 ## Items
 
-* Ansible (puppet, aws, GCP, chef..in future)(Please see devops tools)
+* Ansible (puppet, aws, GCP, chef..in future)(Please see [devops] tools for specific info)
 * EBS
 * S3 (Boto)
 * benchmarking
 * monitoring
 * Rabbitmq
+
